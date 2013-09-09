@@ -22,7 +22,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class QuantumMechanics {
 	
 	public static Block Quantainium;
-
+	
         @Instance(value = "QMech")
         public static QuantumMechanics instance;
         
@@ -32,16 +32,16 @@ public class QuantumMechanics {
         @EventHandler        
         public void preInit(FMLPreInitializationEvent event) {
                 System.out.println("fak u");
-                Block Quantainium = new Quantainium(600);
+                Block Quantainium = new Quantainium(500).setUnlocalizedName("Quantainium");
                 GameRegistry.registerBlock(Quantainium, "Quantainium");
                 LanguageRegistry.addName(Quantainium, "Quantainium");
                 
                 MinecraftForge.setBlockHarvestLevel(Quantainium, "pickaxe", 1);
-                proxy.registerRenderers();
         }
         
         @EventHandler
         public void load(FMLInitializationEvent event) {
+        	proxy.registerRenderers();
         }
         @EventHandler
         public void postInit(FMLPostInitializationEvent event) {

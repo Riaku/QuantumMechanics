@@ -1,0 +1,15 @@
+[
+{
+  "modid" : "QMech",
+  "name" : "Quantum Mechanics",
+  "version" : "0.0.1 Alpha",
+  "credits" : "",
+  "authors": ["ThatJoshGreen", "Cindylo"],
+  "description": "A mod which plans to add many cool things to Minecraft",
+  "url" : "https://github.com/TAJG/QuantumMechanics",
+  "updateUrl" : "",
+  "logoFile" : "",
+  "parent" : "",
+  "screenshots": []
+}
+]

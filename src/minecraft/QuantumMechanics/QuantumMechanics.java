@@ -32,7 +32,7 @@ public class QuantumMechanics {
         @EventHandler        
         public void preInit(FMLPreInitializationEvent event) {
                 System.out.println("fak u");
-                Block Quantainium = new Quantainium(500);
+                Block Quantainium = new Quantainium(600);
                 GameRegistry.registerBlock(Quantainium, "Quantainium");
                 LanguageRegistry.addName(Quantainium, "Quantainium");
                 

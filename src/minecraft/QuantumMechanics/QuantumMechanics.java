@@ -38,7 +38,7 @@ public class QuantumMechanics {
                 
                 MinecraftForge.setBlockHarvestLevel(Quantainium, "pickaxe", 1);
                 
-                GameRegistry.registerWorldGenerator(new WorldGen());
+                
         }
         
         @EventHandler

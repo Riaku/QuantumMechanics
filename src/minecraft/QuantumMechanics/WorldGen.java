@@ -26,9 +26,9 @@ public class WorldGen implements IWorldGenerator {
         }
  
         public void generateSurface(World world, Random rand, int chunkX, int chunkZ) {
-                for (int i = 0; i < 30; i++) {
+                for (int i = 0; i < 40; i++) {
                         int randPosX = chunkX + rand.nextInt(16);
-                        int randPosY = rand.nextInt(15); // CHANGE 64 TO THE MAX Y LEVEL YOU WANT TO SEE YOUR ORE
+                        int randPosY = rand.nextInt(14); // CHANGE 64 TO THE MAX Y LEVEL YOU WANT TO SEE YOUR ORE
                         int randPosZ = chunkZ + rand.nextInt(16);
  
                         // CHANGE THE 6 BELOW TO THE MAX AMOUNT OF NODES YOU WANT IN A VEIN

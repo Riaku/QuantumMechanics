@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
+import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -31,12 +32,13 @@ public class QuantumMechanics {
  
         @EventHandler        
         public void preInit(FMLPreInitializationEvent event) {
-                System.out.println("fak u");
-                Block Quantainium = new Quantainium(500).setUnlocalizedName("Quantainium");
+                Block Quantainium = new Quantainium(500);
                 GameRegistry.registerBlock(Quantainium, "Quantainium");
                 LanguageRegistry.addName(Quantainium, "Quantainium");
                 
                 MinecraftForge.setBlockHarvestLevel(Quantainium, "pickaxe", 1);
+                
+                GameRegistry.registerWorldGenerator(new WorldGen());
         }
         
         @EventHandler

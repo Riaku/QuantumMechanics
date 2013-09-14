@@ -2,6 +2,7 @@ package QuantumMechanics;
 
 
 import QuantumMechanics.blocks.Quantainium;
+import QuantumMechanics.util.WorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -38,7 +39,7 @@ public class QuantumMechanics {
                 
                 MinecraftForge.setBlockHarvestLevel(Quantainium, "pickaxe", 1);
                 
-                1234567890
+                
         }
         
         @EventHandler
@@ -47,6 +48,6 @@ public class QuantumMechanics {
         }
         @EventHandler
         public void postInit(FMLPostInitializationEvent event) {
-                // Stub Method
+        	
         }
 }

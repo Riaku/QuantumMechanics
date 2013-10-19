@@ -37,7 +37,7 @@ public class QuantumMechanics {
                 GameRegistry.registerBlock(Quantainium, "Quantainium");
                 LanguageRegistry.addName(Quantainium, "Quantainium");
                 
-                MinecraftForge.setBlockHarvestLevel(Quantainium, "pickaxe", 1);
+                MinecraftForge.setBlockHarvestLevel(Quantainium, "pickaxe", 3); // Upped the level to diamond
                 
                 
         }

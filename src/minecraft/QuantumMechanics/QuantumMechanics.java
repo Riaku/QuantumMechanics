@@ -2,7 +2,7 @@ package QuantumMechanics;
 
 
 import QuantumMechanics.blocks.Quantainium;
-import QuantumMechanics.util.WorldGen;
+import QuantumMechanics.util.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -20,7 +20,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid="QMech", name="Quantum Mechanics", version="0.0.1 Alpha")
-@NetworkMod(clientSideRequired=true, serverSideRequired=false)
+@NetworkMod(clientSideRequired = true, serverSideRequired = false, channels = { "QMech" }, packetHandler = PacketHandler.class)
 public class QuantumMechanics {
 	
 	public static Block Quantainium;
@@ -37,7 +37,7 @@ public class QuantumMechanics {
                 GameRegistry.registerBlock(Quantainium, "Quantainium");
                 LanguageRegistry.addName(Quantainium, "Quantainium");
                 
-                MinecraftForge.setBlockHarvestLevel(Quantainium, "pickaxe", 3); // Upped the level to diamond
+                MinecraftForge.setBlockHarvestLevel(Quantainium, "pickaxe", 3);
                 
                 
         }

@@ -21,7 +21,7 @@ public class ForceElectromagnetic extends Item {
 		super(id);
 		setCreativeTab(CreativeTabs.tabMaterials);
 		setMaxStackSize(1);
-		setUnlocalizedName("QUANTAINIUM_INGOT");
+		setUnlocalizedName("Electromagnetic Force");
 	}
 	
 	

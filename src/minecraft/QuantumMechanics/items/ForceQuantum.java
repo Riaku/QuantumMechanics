@@ -12,23 +12,23 @@ import net.minecraft.util.Icon;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ForceWeakNuclear extends Item {
+public class ForceQuantum extends Item {
 
 	@SideOnly(Side.CLIENT)
 	private Icon chargedIcon;
 	
-	public ForceWeakNuclear(int id) {
+	public ForceQuantum(int id) {
 		super(id);
 		setCreativeTab(CreativeTabs.tabMaterials);
 		setMaxStackSize(1);
-		setUnlocalizedName("Weak Nuclear Force");
+		setUnlocalizedName("Quantum Force");
 	}
 	
 	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister register) {
-		itemIcon = register.registerIcon("qmech:ForceWeakNuclear");
+		itemIcon = register.registerIcon("qmech:ForceGravitational");
 	}
 	
 	

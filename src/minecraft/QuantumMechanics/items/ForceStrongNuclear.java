@@ -21,7 +21,7 @@ public class ForceStrongNuclear extends Item {
 		super(id);
 		setCreativeTab(CreativeTabs.tabMaterials);
 		setMaxStackSize(1);
-		setUnlocalizedName("QUANTAINIUM_INGOT");
+		setUnlocalizedName("Strong Nuclear Force");
 	}
 	
 	
